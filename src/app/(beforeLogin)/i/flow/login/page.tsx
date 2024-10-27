@@ -1,3 +1,3 @@
-export default function LoginPopup() {
-  return <div>로그인</div>;
+export default function Login() {
+  return <main>로그인 모달</main>;
 }
