@@ -109,7 +109,7 @@
 .actionButton:disabled {
     opacity: 0.5;
 }
-.actionButton:hover {
+.actionButton:not(:disabled):hover {
     background-color: rgb(39,44,48);
 }
 
