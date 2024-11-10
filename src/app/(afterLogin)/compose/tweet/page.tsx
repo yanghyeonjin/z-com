@@ -1,3 +1,5 @@
-export default function Home() {
-  return <div>d</div>;
+import Home from "@/app/(afterLogin)/home/page";
+
+export default function ComposeTweet() {
+  return <Home />;
 }

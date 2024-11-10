@@ -6,10 +6,14 @@ import NavMenu from "./_component/NavMenu";
 import LogoutButton from "./_component/LogoutButton";
 import TrendSection from "./_component/TrendSection";
 import FollowRecommend from "./_component/FollowRecommend";
+import { ReactNode } from "react";
 
-export default function AfterLoginLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+type Props = {
+  children: ReactNode;
+  modal: ReactNode;
+};
+
+export default function AfterLoginLayout({ children, modal }: Readonly<Props>) {
   return (
     <div className={style.container}>
       <header className={style.leftSectionWrapper}>
@@ -59,6 +63,7 @@ export default function AfterLoginLayout({
           </section>
         </div>
       </div>
+      {modal}
     </div>
   );
 }
